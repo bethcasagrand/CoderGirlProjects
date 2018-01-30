@@ -8,15 +8,15 @@ public class Groceries
         Scanner keyboard = new Scanner(System.in);
         String groceryItem1;
         out.println("What is your first item? ");
-        groceryItem1 = keyboard.next ();
+        groceryItem1 = keyboard.nextLine ();
 
         String groceryItem2;
         out.println("What is your second item?");
-        groceryItem2 = keyboard.next ();
+        groceryItem2 = keyboard.nextLine ();
 
         String groceryItem3;
         out.println("What is your third and last item?");
-        groceryItem3 = keyboard.next ();
+        groceryItem3 = keyboard.nextLine ();
 
         int quantity1;
         out.println("How many " + groceryItem1 + " do you want?");
@@ -49,7 +49,7 @@ public class Groceries
         keyboard.skip("\n");
 
         float totalPrice;
-        totalPrice = (quantity1 * price1) + (quantity2 * price2)+ (quantity3 + price3);
+        totalPrice = (quantity1 * price1) + (quantity2 * price2)+ (quantity3 * price3);
         out.println("Calculating your grocery bill.");
         out.print("Your total is " + totalPrice);
     }
