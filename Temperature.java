@@ -71,6 +71,18 @@ public class Temperature {
         }
         System.out.println();
 
+        //calculates and prints averages for times
+        for (int row = 0; row < grid.length; row++) {
+            int sum = 0;
+            int timeOfDayAvg = 0;
+            for (int column = 0; column < grid[0].length; column++) {
+                sum += grid[row][column];
+            }
+            timeOfDayAvg = sum / grid[0].length;
+            System.out.println(times[row] + timeOfDayAvg);
+        }
+
+
         //calculates weekly average temp
         for (int row = 0; row < grid.length; row++) {
             for (int column = 0; column < grid[0].length; column++) {
