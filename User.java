@@ -3,10 +3,10 @@ package microblog;
 public class User
 {
 
-    private String avatarUrl;
-    private String userName;
-    private String realName;
-    private String email;
+    public String avatarUrl;
+    public String userName;
+    public String realName;
+    public String email;
 
     public User (String avatarUrl, String userName, String realName, String email)
     {
@@ -16,9 +16,9 @@ public class User
         this.email = email;
     }
 
-    public String getUserInfo()
+    public String getUserName()
 
     {
-        return userName;
+        return this.userName;
     }
 }

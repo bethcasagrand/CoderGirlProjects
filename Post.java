@@ -1,28 +1,24 @@
 package microblog;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 public class Post {
 
-    private static int nextpostNumber = 0;
+    public String userName;
+    public String post;
+    public int postNumber;
 
-    private String postUser;
-    private int postNumber;
-    private String postContent;
-    private String webAddress;
-
-    public Post(int postNumber, String postUser, String postContent, String webAddress) {
-        this.postNumber = nextpostNumber;
-        nextpostNumber++;
-        this.postUser = postUser;
-        this.postContent = postContent;
-        this.webAddress = webAddress;
+    public Post(String userName, String post, int postNumber) {
+        this.userName = userName;
+        this.post = post;
+        this.postNumber = postNumber;
     }
 
-    public int getpostNumber()
+    public void printPost()
     {
-        return postNumber;
+        System.out.println("Username: " + userName + "\n" + "Post: " + post);
     }
-}
 
+    public String getUserName() {
+        return this.userName;
+    }
+
+}
